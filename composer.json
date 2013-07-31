@@ -1,0 +1,9 @@
+{
+	"name": "timkandel\/flexslider",
+	"type": "typo3-flow-plugin",
+	"description": null,
+	"version": null,
+	"require": {
+		"typo3\/neos": ">=1.0.0-alpha4"
+	}
+}

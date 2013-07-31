@@ -1,0 +1,15 @@
+#
+# Slider content type
+#
+prototype(TimKandel.Flexslider:Slider) < prototype(TYPO3.Neos:Template)
+prototype(TimKandel.Flexslider:Slider) {
+	templatePath = 'resource://TimKandel.Flexslider/Private/Templates/TypoScript/Slider.html'
+	animation = ${q(node).property('animation')}
+
+		# Create a new Section TypoScript object which inherits the behavior of the
+		# default section (which renders a collection of content elements).
+	slider = TYPO3.Neos:ContentCollection
+
+		# The name of the section node to be rendered is also "main"
+	slider.nodePath = 'slider'
+}

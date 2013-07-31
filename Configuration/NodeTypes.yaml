@@ -1,0 +1,30 @@
+'TimKandel.Flexslider:Slider':
+  superTypes: ['TYPO3.Neos:Content']
+  ui:
+    label: 'Slider'
+    group: 'Plugins'
+    icon: 'icon-expand'
+    inlineEditable: TRUE
+    inspector:
+      groups:
+        slider:
+          label: 'Slider'
+  childNodes:
+    slider:
+      type: 'TYPO3.Neos:ContentCollection'
+  properties:
+    animation:
+      defaultValue: 'slide'
+      type: string
+      ui:
+        label: 'Animation'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'slider'
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              'slide':
+                label: 'slide'
+              'fade':
+                label: 'fade'
