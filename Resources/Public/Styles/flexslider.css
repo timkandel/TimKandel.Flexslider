@@ -71,6 +71,16 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
 @media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
-  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+	.flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+	.flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}
+
+/* Addtions for TimKandel.Flexslider Neos Plugin
+******************************************************/
+.timkandel-flexslider-slider .neos-contentelement {
+	display: none;
+}
+
+.timkandel-flexslider-slider .flex-control-nav {
+	position: static;
 }
